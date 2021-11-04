@@ -1,15 +1,13 @@
 import java.util.Scanner;
 
-public class showNumbersPrime {
+public class showPrimeLess100 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number of primes to print:  ");
+        System.out.println("Enter limit of primes to print:  ");
         int numbers = sc.nextInt();
-        int count = 0;
-        for (int i = 2; count < numbers ; i++) {
+        for (int i = 2; i < numbers ; i++) {
             if(isPrime(i)){
                 System.out.print(i+", ");
-                count++;
             }
         }
     }
